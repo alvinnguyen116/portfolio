@@ -29,6 +29,6 @@ $(document).ready(function(){
 	window.setTimeout(function(){maincontent_in(".main-content h2")}, 4000)
 	window.setTimeout(function(){maincontent_in(".main-content h3")}, 4500)
 	window.setTimeout(function(){maincontent_in(".main-content .navbar")},5000)
-	window.setTimeout(function(){$('.page').show();$('body').css({'border-color':'black'}); $(".horizontal-line").show()}, 6000);
+	window.setTimeout(function(){$('.page').show();$('body').css({'border-color':'black'}); $(".horizontal-line").show(); $(".main-content").css({"position":"relative"})}, 6000);
 });
 
