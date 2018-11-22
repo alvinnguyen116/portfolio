@@ -25,10 +25,10 @@ $(document).ready(function(){
 	}
 	window.setTimeout(function(){transition_out(".intro")}, 4000);
 	window.setTimeout(function(){transition_in(".intro")}, 5000);
-	window.setTimeout(function(){maincontent_in(".main-content h1")}, 6000)
-	window.setTimeout(function(){maincontent_in(".main-content h2")}, 7000)
-	window.setTimeout(function(){maincontent_in(".main-content h3")}, 8000)
-	window.setTimeout(function(){maincontent_in(".main-content .navbar")}, 90000)
-	window.setTimeout(function(){$('.page').show();$('body').css({'border-color':'black'}); $(".horizontal-line").show()}, 10000);
+	window.setTimeout(function(){maincontent_in(".main-content h1")}, 5500)
+	window.setTimeout(function(){maincontent_in(".main-content h2")}, 6500)
+	window.setTimeout(function(){maincontent_in(".main-content h3")}, 7500)
+	window.setTimeout(function(){maincontent_in(".main-content .navbar")}, 8500)
+	window.setTimeout(function(){$('.page').show();$('body').css({'border-color':'black'}); $(".horizontal-line").show()}, 9500);
 });
 
