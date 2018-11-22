@@ -8,7 +8,9 @@
   color: white;
   font-family: "Terminal Dosis";
   align-content: flex-start;
-  font-size: 50px; }
+  font-size: 50px;
+  max-height: 60vw;
+  position: absolute; }
 
 .terminal-arrows {
   padding: 6px 25px 0 25px; }
