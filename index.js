@@ -4,7 +4,7 @@ function print_animation(target, string, delay) {
 
 function transition_out(target) {
 	$(target).css({'transition':'all 1s ease', 'overflow':'hidden'});
-	$(target).css({'height':'75%', 'width':'75%'});
+	$(target).css({'height':'90%', 'width':'90%'});
 }
 
 function transition_in(target) {
@@ -21,14 +21,14 @@ function maincontent_in(target) {
 $(document).ready(function(){
 	string = "print(\"hello world\")"
 	for (i=0; i <= string.length; i++) {
-		print_animation(".print", string.slice(0,i), 200 * i)
+		print_animation(".print", string.slice(0,i), 100 * i)
 	}
-	window.setTimeout(function(){transition_out(".intro")}, 5000);
-	window.setTimeout(function(){transition_in(".intro")}, 6000);
-	window.setTimeout(function(){maincontent_in(".main-content h1")}, 7000)
-	window.setTimeout(function(){maincontent_in(".main-content h2")}, 8000)
-	window.setTimeout(function(){maincontent_in(".main-content h3")}, 9000)
-	window.setTimeout(function(){maincontent_in(".main-content .navbar")}, 10000)
-	window.setTimeout(function(){$('.page').show();$('body').css({'border-color':'black'}); $(".horizontal-line").show()}, 11000);
+	window.setTimeout(function(){transition_out(".intro")}, 4000);
+	window.setTimeout(function(){transition_in(".intro")}, 5000);
+	window.setTimeout(function(){maincontent_in(".main-content h1")}, 6000)
+	window.setTimeout(function(){maincontent_in(".main-content h2")}, 7000)
+	window.setTimeout(function(){maincontent_in(".main-content h3")}, 8000)
+	window.setTimeout(function(){maincontent_in(".main-content .navbar")}, 90000)
+	window.setTimeout(function(){$('.page').show();$('body').css({'border-color':'black'}); $(".horizontal-line").show()}, 10000);
 });
 
