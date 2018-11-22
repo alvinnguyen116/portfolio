@@ -23,12 +23,12 @@ $(document).ready(function(){
 	for (i=0; i <= string.length; i++) {
 		print_animation(".print", string.slice(0,i), 100 * i)
 	}
-	window.setTimeout(function(){transition_out(".intro")}, 4000);
-	window.setTimeout(function(){transition_in(".intro")}, 5000);
-	window.setTimeout(function(){maincontent_in(".main-content h1")}, 5500)
-	window.setTimeout(function(){maincontent_in(".main-content h2")}, 6500)
-	window.setTimeout(function(){maincontent_in(".main-content h3")}, 7500)
-	window.setTimeout(function(){maincontent_in(".main-content .navbar")}, 8500)
-	window.setTimeout(function(){$('.page').show();$('body').css({'border-color':'black'}); $(".horizontal-line").show()}, 9500);
+	window.setTimeout(function(){transition_out(".intro")}, 3000);
+	window.setTimeout(function(){transition_in(".intro")}, 4000);
+	window.setTimeout(function(){maincontent_in(".main-content h1")}, 4000)
+	window.setTimeout(function(){maincontent_in(".main-content h2")}, 5000)
+	window.setTimeout(function(){maincontent_in(".main-content h3")}, 6000)
+	window.setTimeout(function(){maincontent_in(".main-content .navbar")},7000)
+	window.setTimeout(function(){$('.page').show();$('body').css({'border-color':'black'}); $(".horizontal-line").show()}, 8000);
 });
 
