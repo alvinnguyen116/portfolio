@@ -111,7 +111,8 @@ body {
 .main-content {
   display: none;
   color: white;
-  height: 100%;
+  height: fit-content;
+  margin-bottom: 100px;
   width: 100%;
   top: 0;
   left: 0;
@@ -235,5 +236,17 @@ body {
   display: none;
   width: 80%;
   border-top: 7px double; }
+
+@media (max-width: 1100px) {
+  .col-40 {
+    width: 100%; }
+
+  .page .page-container h1 {
+    width: fit-content;
+    margin: 0 auto; }
+
+  .info-box {
+    width: 90%;
+    margin-top: 40px; } }
 
 /*# sourceMappingURL=index.css.map */
