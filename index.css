@@ -1,0 +1,239 @@
+.intro {
+  visibility: visible;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  font-family: "Terminal Dosis";
+  align-content: flex-start;
+  font-size: 50px; }
+
+.terminal-arrows {
+  padding: 6px 25px 0 25px; }
+
+.white-bar {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border: 2px solid black; }
+
+.white-bar img {
+  width: 60px;
+  padding: 0 9px;
+  float: left; }
+
+.white-bar h1 {
+  font-size: 35px;
+  color: black;
+  padding: 0 20px;
+  float: left;
+  line-height: 9.5px;
+  font-weight: normal; }
+
+.blink {
+  width: 40px;
+  border-bottom: 5px solid white;
+  animation: blink .75s step-end infinite; }
+
+.terminal-icons {
+  float: right;
+  display: flex;
+  color: black;
+  align-items: center;
+  height: inherit; }
+  .terminal-icons .box-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 100%;
+    margin-right: 3px; }
+    .terminal-icons .box-container .diag1, .terminal-icons .box-container .diag2, .terminal-icons .box-container .diag3 {
+      width: 25px;
+      height: 2px;
+      background-color: black;
+      position: absolute; }
+    .terminal-icons .box-container .diag1 {
+      transform: rotate(45deg); }
+    .terminal-icons .box-container .diag2 {
+      transform: rotate(-45deg); }
+    .terminal-icons .box-container .diag3 {
+      width: 30px;
+      height: 2.25px;
+      top: 25px; }
+    .terminal-icons .box-container .box1 {
+      left: 25px;
+      top: 20px;
+      background-color: white;
+      z-index: 1; }
+    .terminal-icons .box-container .box2 {
+      right: 24px;
+      top: 14px; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 95%;
+  margin: 1.5% auto;
+  border: 10px double white;
+  transition: all 1s ease; }
+
+/* The typewriter cursor effect */
+@keyframes blink {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: white; } }
+.box1, .box2 {
+  width: 15px;
+  border: 2.5px solid black;
+  height: 15px;
+  position: absolute; }
+
+.red-hover:hover {
+  background-color: #ff0000c4;
+  color: white; }
+  .red-hover:hover .diag1, .red-hover:hover .diag2 {
+    background-color: white; }
+
+.grey-hover:hover {
+  background-color: #eee;
+  color: white; }
+  .grey-hover:hover .box1 {
+    background-color: #eee; }
+
+.main-content {
+  display: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-family: "Terminal Dosis"; }
+  .main-content h1, .main-content h2, .main-content h3 {
+    opacity: 0;
+    transition: all 1s linear;
+    font-size: 90px;
+    line-height: 1.1;
+    overflow: hidden;
+    letter-spacing: 15px;
+    position: relative;
+    color: #f5333340; }
+    .main-content h1 span:hover, .main-content h2 span:hover, .main-content h3 span:hover {
+      text-decoration: underline; }
+  .main-content h1 .overlap {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    color: #00bbff6e; }
+  .main-content h2 {
+    margin-top: -40px; }
+    .main-content h2 .overlap {
+      position: absolute;
+      color: #00bbff6e;
+      top: 3px;
+      right: -3px;
+      width: 100%; }
+  .main-content h3 {
+    margin-top: -40px; }
+    .main-content h3 .overlap {
+      position: absolute;
+      color: #00bbff6e;
+      top: 3px;
+      right: -3px;
+      width: 100%; }
+  .main-content .title {
+    width: fit-content;
+    padding-left: 10%; }
+  .main-content .navbar {
+    font-size: 30px;
+    color: black;
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 0; }
+    .main-content .navbar > a {
+      color: black;
+      text-decoration: none;
+      float: left;
+      padding: 0 20px;
+      text-decoration: line-through; }
+    .main-content .navbar > a:hover {
+      text-decoration: none; }
+    .main-content .navbar > div {
+      float: left; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.page {
+  display: none;
+  height: fit-content;
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  padding: 100px 50px; }
+  .page .page-container {
+    margin: 0px 50px; }
+    .page .page-container h1 {
+      font-size: 75px;
+      line-height: 1.1;
+      letter-spacing: 15px;
+      position: relative;
+      color: #f4433675; }
+      .page .page-container h1 span:hover {
+        text-decoration: underline; }
+      .page .page-container h1 .overlap {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        color: #ffa5007d; }
+    .page .page-container .info-box h1 {
+      font-size: 20px;
+      color: black;
+      letter-spacing: unset;
+      text-align: center;
+      text-decoration: underline;
+      font-weight: normal; }
+
+.indent {
+  margin-left: 20px; }
+
+.new-a {
+  color: unset;
+  text-decoration: line-through; }
+
+.new-a:hover {
+  text-decoration: none; }
+
+.col-40 {
+  width: 40%;
+  float: left; }
+
+.info-box {
+  line-height: 21px;
+  font-size: 14px;
+  width: 50%;
+  float: left;
+  background-color: #eeeeee47;
+  padding: 0 2.5%;
+  padding-bottom: 14px;
+  margin: 0 2.5%;
+  font-family: monospace;
+  border-radius: 20px; }
+  .info-box span {
+    float: left; }
+
+.horizontal-line {
+  display: none;
+  width: 80%;
+  border-top: 7px double; }
+
+/*# sourceMappingURL=index.css.map */
