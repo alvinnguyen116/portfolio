@@ -9,7 +9,6 @@
   font-family: "Terminal Dosis";
   align-content: flex-start;
   font-size: 4vw;
-  height: 100vw;
   position: absolute;
   z-index: 1;
   top: 0; }
@@ -618,17 +617,18 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: .75s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: .75s;
+  animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 0} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 0} 
   to {opacity: 1}
 }
