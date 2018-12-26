@@ -1,12 +1,28 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="index.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>		
+<!-- 		<meta charset="utf-8">  
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> -->
+    	<title>Portfolio</title>
+<!--     	<link href="css/Map_CSS.css" rel="stylesheet" type="text/css"/>
+    	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/> -->
 	</head>
 	<body style="overflow-x: hidden;">
+		<!-- <div class="half half-left"></div>
+		<div class="half half-right"></div> -->
+		<div class="double db-red"></div>
+		<div class="double db-orange"></div>
+		<div class="double db-yellow"></div>
+		<div class="double db-green"></div>
+		<div class="double db-blue"></div>
+		<div class="double db-purple"></div>
 		<div class="intro">
 			<div class="white-bar">
 				<img src="cmdprompt-icon.png" alt="icon">
-				<h1>Cmd Prompt - Py</h1>
+				<h1>Cmd Prmpt - Py</h1>
 				<div class="terminal-icons"> 
 					<div class="box-container grey-hover">
 						<div class="diag3"></div>
@@ -26,72 +42,81 @@
 			<p class="blink"></p>
 		</div>
 		<div class="main-content">
+			<div class="horiz-nav">
+				<li>
+					<a href="#about-me"><div>bio</div></a>
+				</li>
+				<li>
+					<a href="#proj"><div>projecto</div></a>	
+				</li>
+				<li>
+					<a href="#contact"><div>contacto</div></a>
+				</li>
+			</div>
 			<div class="title clearfix">
-				<h1>
+				<h1 class="anim-1 var-font-size">
 					<span>hello</span>
 					<span>world</span>
-					,
 					<div class="overlap">
 						<span>hello</span>
 						<span>world</span>
-						,
 					</div>
 				</h1>
-				<h2>
-					<span>welcome</span> 
-					<span>to</span> 
-					<span>my</span> 
-					<div class="overlap">
+				<h1 class="anim-2 var-font-size">
+					<span>welcome</span>
+					<span>to</span>
+<!-- 					<span>...</span> 
+ -->					<div class="overlap">
 						<span>welcome</span>
-						<span>to</span> 
-						<span>my</span>
-					</div>
-				</h2>
-				<h3>
-					<span>web</span> 
-					<span>portfolio</span>
+						<span>to</span>
+<!-- 						<span>...</span> 
+ -->					</div>
+				</h1>
+				<h1 class="anim-3 var-font-size">
+					<span>my</span>
+					<span><em>portfolio</em></span> 
 					<div class="overlap">
-						<span>web</span> 
-						<span>portfolio</span>
+						<span>my</span>
+						<span><em>portfolio</em></span> 
 					</div>
-				</h3>
+				</h1>
 			</div>
-			<div class="navbar clearfix">
-				<div>
-					portfolio = [
-				</div>
-				<a href="#about-me">descripto</a>
-				<div>,</div>
-				<a href="#proj">projecto</a>
-				<div>,</div>
-				<a href="#contact">contacto</a>
-				<div>]</div>
-			</div>
+			<ul class="nav">
+				<li>
+					<a href="#about-me"><div>bio</div></a>
+				</li>
+				<li>
+					<a href="#proj"><div>projecto</div></a>	
+				</li>
+				<li>
+					<a href="#contact"><div>contacto</div></a>
+				</li>
+			</ul>
 		</div>
-		<div class="horizontal-line"></div>
 		<div class="page" id="about-me">
 			<div class="page-container clearfix">
-				<div class="col-40">
-					<h1 style="font-color: #f4433685;">
-						<span>descripto</span> 
-						<div class="overlap" style="font-color:#ffa5007d;">
-							<span>descripto</span> 
+				<div class="info-title">
+					<h1 style="color: #f4433685;">
+						<span>bio</span> 
+						<div class="overlap" style="color:#ffa5007d;">
+							<span>bio</span> 
 						</div>
 					</h1>
 				</div>
 				<div class="info-box">
-					<p>My name is Alvin Nguyen and I'm a fourth year student attending UC Berkeley. I've learned 2 things about myself while going to school here:</p>
-					<p class="indent">1) I am not very smart</p>
-					<p class="indent">2) I work hard to compensate for not being very smart</p>
-					<p>I started coding really late into my college career, so it takes me a while to complete everyday tasks. Although I may not be the fastest, I work very hard until I am completely done or satisfied. I am a self-taught web-developer who freelances on the side. Most people don't realize the amount of work that is required into making a functional and aesthetically-pleasing website. For this reason, I have a deep appreciation for jaw-dropping websites and aspire to become a cool web developer. 
+					<img src="candid.jpg" alt="Alvin's Candid" class="img"/>
+					<p><strong>History:</strong> I started getting into web development a few years back when my mom asked me, "What are you going to do with your major?" to which I replied, "um ... UI/UX Designer?", so now I do front-end stuff. I started my career at a non-profit called Seva and was fortunate enough to have met Adam Chew, the Web Master at the time, to teach me the basics of Web Design. He was very patient with me and we got along very well. With his guidance, I built a nice map. <a href="#proj">(Check it out below)</a> Now, I mostly freelance for a Startup in SF and practice/study front-end while going to school. Since I attended UC Berkeley, I also have a background in CS Theory.</p> 
+					<p>
+					<strong>Web Interests:</strong> I AM A SELF-PROCLAIMED CSS PURIST. Working with vanilla CSS/HTML is definitely my jam, but I can also work in React and Ruby on Rails. I'm also open to trying other web technologies, but nothing is more statisfying than finding an elegant solution in plain CSS. I follow podcasts and conferences on the latest CSS trends. CSS Grid is cool, but most use cases can be satisfied with regular floats or flexbox. Cross Browser Compatibility is the bane of my existance and I actually like building responsive layouts. I have never worked for a federal organization, but I would love to learn how to make my websites more accessible <a href="https://www.hhs.gov/web/section-508/index.html" target="_blank">(508 Compliance)</a>.</p>
+					<p>
+					<strong>Personal Interests:</strong> In my free time, I like to cook and play games with my boyfriend. I'm into rpg mmo's, gacha games, and board games. I like to cook Asian food and I'm actually not that into boba, but I do enjoy a good ice tea. I probably need to exercise more.
 					</p>
 				</div>
 			</div>
 		</div>
-		<div class="horizontal-line"></div>
 		<div class="page" id="proj">
 			<div class="page-container clearfix">
-				<div class="col-40">
+				<div class="info-title" style="margin-bottom: 20px;">
 					<h1>
 						<span style="color: #4caf5085;">projecto</span> 
 						<div class="overlap">
@@ -99,18 +124,123 @@
 						</div>
 					</h1>
 				</div>
-				<div class="info-box">
-					<h1 style="white-space: nowrap; padding-top: 10px;">Seva Foundation</h1>
-					<p>This is a non-profit I worked for in the Summer of 2017. Their mission is sustainable health care infrastructure in developing countries. As an intern, I helped with small tasks like sealing envelopes, but I also got a chance to build my first application! The webmaster tasked me in revamping an old map on the company's website. After much google-searching and stackoverflow-ing, I was able to produce a final product <a class="new-a" href="https://alvinnguyen116.github.io/seva-map" target="_blank"> (on github) </a>. As an intern, I was very honored to have my work hosted on the <a class="new-a" href="http://www.seva.org/site/PageServer?pagename=programs/prevent_blindness" target="_blank">org's website.</a></p>
-					<h1>CardinalHire</h1>
-					<p>I still freelance for this startup. CardinalHire is a recruiting agency which aims to find high quality candidates for top tech companies in the United States. My work mainly includes debugging and converting UI/UX designs into fully responsive web design. I think the <a class="new-a" href="https://www.cardinalhire.com/" target="_blank"> people here </a> are cool.</p>
-				</div>
+					<div class="title-btn" id="seva-btn" onclick="project_onClick('#seva-btn','#seva-text')">
+						<span>Seva Foundation</span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="3vw" height="20px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829    c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853    c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853    c-2.475,0-4.665,0.95-6.567,2.853L2.856,21.695C0.95,23.597,0,25.784,0,28.262c0,2.478,0.953,4.665,2.856,6.567L135.899,167.877z" fill="#FFFFFF"/>
+									<path d="M267.808,117.053c-1.902-1.903-4.093-2.853-6.57-2.853c-2.471,0-4.661,0.95-6.563,2.853L142.466,229.257L30.262,117.05    c-1.903-1.903-4.093-2.853-6.567-2.853c-2.475,0-4.665,0.95-6.567,2.853L2.856,131.327C0.95,133.23,0,135.42,0,137.893    c0,2.474,0.953,4.665,2.856,6.57l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854l133.054-133.046    c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z" fill="#FFFFFF"/>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="btn-text" id="seva-text">
+						<p><strong>Employer:</strong> <a href="http://www.seva.org/site/PageServer" target="_blank">Seva Foundation</a></p>
+						<p><strong>When & Where:</strong> Summer 2017, Berkeley / Remote</p>
+						<p><strong>Position:</strong> Intern</p>
+						<img class="img-2" src="seva.jpg" alt="Seva HQ"/>
+						<p><strong>Background:</strong> I reached out to Seva because I found an application online and the requirement only included the bare minimum of CSS & HTML. I thought it was going to be perfect for me since I was just starting out. The website relied on a Content Management System, so there was not much for me to do in terms of layout/design. Adam handed me a list of possible projects and I ended up tackling the Map Project. There was an old map of Seva's Partners, Mentees, and Offices. The org at the time reached +100 locations, so the map was getting cluttered. Adam asked me to build a new map that would cluster nearby nodes. He also wanted me to build a legend, a filter, and custom info windows. 
+						</p>
+						<p class="title-text"><strong>Project</strong></p>
+						<p><strong>1) Research:</strong> First, I had to research which Map API was most well-suited for our project. I looked at Leaflet, Google Maps, Open Layers, etc. After a few weeks of reading forums and documentations, I ended using the Google Maps API. Since our old map was hosted on Google's MyMaps(now deprecated), I thought our users would benefit from the consistency. While there was no harm in trying various API's, I didn't want to waste a few months working on a project and realize later that some functionality wouldn't be possible.</p>
+						<p><strong>2) Data Creation:</strong> To get nodes on the map, locations needed to be translated into javascript objects. I used geolocation to obtain each location's latitude and longitude coordinates. In the end, each object had 7 properties. For long term maintenance, I decided it was beneficial to separate the code into script files and data files. It was tedious, but I wrote +800 lines of JSON where each object encoded keyword(for filtering), image, latitude, longitude, name, type(for different icons), and description.</p>
+						<p><strong>3) Icons & Buttons:</strong> I found nice map icons on Font-Awesome and the Web Master helped me edit them to suit our needs. In total, there was three icons: mentee, partner, and office. I also played around with various back buttons and ended up sticking with a 'double arrow' back button.</p>
+						<p><strong>4) Info Windows:</strong> With a custom info window, I was also able to match the background color of the title with its corresponding icon. This color association helps remind user the type of location they are currently viewing. A major part of the customizing the info window was re-designing how it appears and disappears. The default behaviour is having the info window hover above its icon with no animations. Instead, I designed it so that the info window slides from the left and slides out of view when the user clicks on the map or on the back button inside of the info window itself.</p>
+						<p><strong>5) Themes:</strong> I was able to set up three different color schemes for the map, and set the default theme to "Silver" to contrast the bright colors of the locations icons. Google made this process ridicuously easy. There was even a developer tool for picking the color of each road/mountain/etc instead of having to hard code it ourselves.</p>
+						<p><strong>6) Legend:</strong> I spent a large amount of time designing how the legend opens and closes. On top of that, I realized I had to design a separate legend for portait and landscape view. I ended up using two legends and displaying one and hiding the other according to the screen size. Finally, I also added a tool-tip and filter function. The tool-tip uses the same animation as the legend for consistency.</p>
+						<p><strong>7) Filters:</strong> At this point, creating a filter was easy. Most of the logic, such as positioning the filter box and conditioning the JSON file, was already done in the legend.</p>
+						<p><strong>8) Others:</strong> Each info window has a CSS blur on the bottom of the text to indicate there is more text. The effect is subtle but adds a nice touch. I also had to manually add +100 hyperlinks on every info window to other programs on the site. The code itself is clean with thoughtful comments, and there is a <a href="https://github.com/alvinnguyen116/seva-map" target="_blank">read me</a> explaining how others can use my repo for their own map!</p>
+						<p class="title-text"><strong>Final Product</strong></p>
+						<embed src="https://alvinnguyen116.github.io/seva-map/">
+					</div>
+					<div class="title-btn" id="ch-btn" onclick="project_onClick('#ch-btn','#ch-text')">
+						<span>CardinalHire</span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="3vw" height="20px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829    c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853    c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853    c-2.475,0-4.665,0.95-6.567,2.853L2.856,21.695C0.95,23.597,0,25.784,0,28.262c0,2.478,0.953,4.665,2.856,6.567L135.899,167.877z" fill="#FFFFFF"/>
+									<path d="M267.808,117.053c-1.902-1.903-4.093-2.853-6.57-2.853c-2.471,0-4.661,0.95-6.563,2.853L142.466,229.257L30.262,117.05    c-1.903-1.903-4.093-2.853-6.567-2.853c-2.475,0-4.665,0.95-6.567,2.853L2.856,131.327C0.95,133.23,0,135.42,0,137.893    c0,2.474,0.953,4.665,2.856,6.57l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854l133.054-133.046    c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z" fill="#FFFFFF"/>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="btn-text" id="ch-text">
+						<p><strong>Employer:</strong> <a href="https://www.cardinalhire.com/" target="_blank">Cardinal Hire</a></p>
+						<p><strong>When & Where:</strong> Current Job, Remote / Oakland / San Francisco</p>
+						<p><strong>Position:</strong> Freelance, Part-Time</p>
+						<p><strong>Background:</strong> Paul, the current CEO, actually approached me at UC Berkeley's Summer Career Fair in 2018. In the middle of my summer break, I repsonded to a phone interview and code test which led to my first offer as a Developer! We have an amazing UI/UX designer, so most of my work includes translating his designs into markup. Since the designs are static, it's my job to come up with a responsive design and intuitive user interactions. The best part about working remotely is being able to choose when I work and how much I work. :)</p>
+						<p class="title-text"><strong>Projects</strong></p>
+						<p><strong>1) Getting Started:</strong> My first task was to get my system updated so I could develop locally. In the first few weeks, I learned Ruby on Rails and the app's architecture. We submit tickets on Clubhouse and use Github to track our own branches before merging it into our live branch. My first commit involved debugging a config file for Windows.</p>
+						<p><strong>2) Sign Up:</strong> I wanted to focus on front-end, so my first task was setting up the layout for a new sign up process. I mostly used Twitter Bootstrap, and plain CSS/HTML for the markup. Some of the inputs needed to be a different color on selection and then unselect all other inputs. I solved this with jQuery. An important discovery I made was SVG could by styled with plain CSS.</p>
+						<p><strong>3) Candidate Profile:</strong> We had a lot of ambitions regarding the profile page. Since there were so many boxes, I thought it would be a good opportunity to test the effectiveness of CSS grid. The design was a bit tricky since we needed to display/enable certain buttons for certain users.</p>
+						<p><strong>4) Landing Pages:</strong> These pages are static and most of the work involves having a keen-eye for small details.</p>
+						<p><strong>5) Search:</strong> This was one of our most back-end intensive project. I worked on the filter display and the result box for each candidate.</p>
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <img src="ch-4.png" style="width: 80%;">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="ch-3.png">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="ch-2.png" style="width: 77%;">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="ch-1.png" style="width: 48%;">
+	</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+	
+
+						</div>
+						
+					<div class="title-btn" id="pp-btn" onclick="project_onClick('#pp-btn','#pp-text')">
+						<span>Personal Project</span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="3vw" height="20px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829    c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853    c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853    c-2.475,0-4.665,0.95-6.567,2.853L2.856,21.695C0.95,23.597,0,25.784,0,28.262c0,2.478,0.953,4.665,2.856,6.567L135.899,167.877z" fill="#FFFFFF"/>
+									<path d="M267.808,117.053c-1.902-1.903-4.093-2.853-6.57-2.853c-2.471,0-4.661,0.95-6.563,2.853L142.466,229.257L30.262,117.05    c-1.903-1.903-4.093-2.853-6.567-2.853c-2.475,0-4.665,0.95-6.567,2.853L2.856,131.327C0.95,133.23,0,135.42,0,137.893    c0,2.474,0.953,4.665,2.856,6.57l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854l133.054-133.046    c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z" fill="#FFFFFF"/>
+								</g>
+							</g>
+						</svg>
+					</div>	
+					<div class="btn-text clearfix" id="pp-text">
+							<p><strong>Employer:</strong> Personal Project</p>
+							<p><strong>Background:</strong> I decided I needed more practice with a Javascript framework if I wanted to be taken seriously as a Front-End Developer. The React Tutorial shows you how to build a Tic-Tac-Toe game out of components. Inspired by the grid-based game, I challenged myself to code the 2048 game with variable board size, scoring function, and new game modes.</p>
+							<p class="title-text"><strong>Project</strong> </p>
+							<p><strong>1) Research:</strong> First, I played the in-browser 2048 game. Each move spawned 2 squares on random empty spaces on the board. Numbers are only added if they are neighbors.</p>
+							<p><strong>2) Board Size:</strong> The range input value for board size is observed by an onchange event from the game state. Once the game state changes, its children are passed down the size by prop values, and thus renders the appropriate board size.</p>
+							<p><strong>3) Scoring Function:</strong> The score is calculated by the total amount of the current state minus the previous state.(or the total value that spawned within a single move)</p>
+							<p><strong>4) 2048 Logic:</strong> I stored the numbers as a single array and created helper functions to convert the 1D array to rows or columns. From previous projects, I could have coded a single "move up function" and rotated the board some 'x' amount of times eaccording to the whether the move was up, down, left, or right but rotating an array in Javascript seemed messy. Instead, I wrote the logic for moving up and simply used the column and row logic in both normal and reverse order to mimic moving in all four directions. For randomness, I used Math.random and returned 2 if the value was less than .5 and returned 4 otherwise.</p>
+							<p><strong>5) Arrow Keys:</strong> I was able to capture arrow key events using an input box and setting autofocus to "true". I was afraid users would not realize focus on the arrow key box is required to play. In the future, I would capture events globally and collect sliding events for mobile users.</p>
+							<p><strong>6) Extreme Mode:</strong> This mode spawns 1 and 3, meaning the player will also have to deal with a wider range of numbers. There is a score multiplier to incentivize players to play in extreme mode.</p>
+							<p><strong>7) Others:</strong> I didn't want to hard code the colors since there is an infinite amount of numbers. Instead, I used a function for incrementing hexcode(colors can be represented in hexcode) and using modulus of white(the largest hexcode color) to determine the color of each square. The game panel and the board is as respsonive as it can be, but large game board size will not fit on certain screens. Please don't play this game on mobile. There is no sliding event and the board does not scale well on mobile. Sorry!</p>
+							<p class="title-text"><strong>Final Product</strong></p>
+							<embed src="https://alvinnguyen116.github.io/2048/">
+					</div>
+				
 			</div>
 		</div>
-		<div class="horizontal-line"></div>
-		<div class="page" id="contact">
+		<div class="page">
 			<div class="page-container clearfix">
-				<div class="col-40">
+				<div class="info-title">
 					<h1>
 						<span style="color: #9c27b05c;">contacto</span> 
 						<div class="overlap">
@@ -118,14 +248,15 @@
 						</div>
 					</h1>
 				</div>
-				<div class="info-box">
-					<p>I promise to hone my skillz and improve this sad portfolio. If you would like to help me in my endeavor, or just get some boba, feel free to shoot me an email, send me a text, or FLY ME A CARRIER PIGEON.</p>
-					<p style="width: 100%; float: left;"><span style="float: left;">Email:</span> <span style="float: left;padding-left: 43px;"> alvinnguyen@berkeley.edu <br> alvinnguyen116@gmail.com</span></p>
-					<p><span>Phone:</span> <span style="float:left; padding-left: 43px;">(408) 992-5172</span></p>
+				<div class="info-box clearfix" id="contact">
+					<p>I'm on a journey on becoming the best web developer I can be. If you would like to help me in my endeavor, please feel free to contact me by email address or phone number.</p>
+					<p style="width: 100%; float: left;"><strong style="float: left;">Email:</strong> <span style="float: left;padding-left: 43px;"> alvinnguyen@berkeley.edu <br> alvinnguyen116@gmail.com</span></p>
+					<p><strong style="float:left;">Phone:</strong> <span style="float:left; padding-left: 43px;">(408) 992-5172</span></p>
 				</div>
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<script src="index.js"></script>
 	</body>
 </html>
