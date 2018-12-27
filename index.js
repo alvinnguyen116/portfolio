@@ -4,7 +4,7 @@ function print_animation(target, string, delay) {
 
 function transition_out(target) {
 	$(target).css({'transition':'all 1s ease', 'overflow':'hidden'});
-	$(target).css({'height':'90%', 'width':'90%'});
+	$(target).css({'height':'90vh', 'width':'90vw'});
 }
 
 function transition_in(target) {
